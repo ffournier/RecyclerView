@@ -36,11 +36,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return items.size();
     }
     
-    @Override
-    public long getItemId(int position) {
-        return items.get(position).getId();
-    }
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView icon;
         public TextView primaryText;
