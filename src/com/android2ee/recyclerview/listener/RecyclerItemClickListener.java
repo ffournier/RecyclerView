@@ -1,4 +1,4 @@
-package com.android2ee.recyclerview;
+package com.android2ee.recyclerview.listener;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,12 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-
+/**
+ * 
+ * @author florian
+ * Class RecyclerItemClickListener
+ *
+ */
 public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener {
   private OnItemClickListener mListener;
 

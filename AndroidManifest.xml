@@ -22,6 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".SimpleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".ComplexActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
     </application>
 
 </manifest>

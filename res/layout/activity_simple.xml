@@ -7,17 +7,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.android2ee.recyclerview.MainActivity" >
+    tools:context="com.android2ee.recyclerview.SimpleActivity" >
     
-    <Button android:id="@+id/myButtonSimple"
+    <Button android:id="@+id/myButtonSimpleAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simple" />
+        android:text="Add" />
        
 
-     <Button android:id="@+id/myButtonComplex"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Complex" />
-     
+    <android.support.v7.widget.RecyclerView
+	   android:id="@+id/myListSimple"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context=".SimpleActivity"
+	    />
 </LinearLayout>
