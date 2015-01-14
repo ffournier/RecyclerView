@@ -73,11 +73,10 @@ public class RecyclerSimpleViewAdapter extends RecyclerView.Adapter<RecyclerSimp
         holder.primaryText.setText(item);
         holder.itemView.setTag(item);
         
+        // pair impair position, different color
         if ((position % 2) == 0) {
-        	Log.w("TAG", "color1");
         	holder.itemView.setBackgroundResource(R.color.color1);
         } else {
-        	Log.w("TAG", "color2");
         	holder.itemView.setBackgroundResource(R.color.color2);
         }
 	}
