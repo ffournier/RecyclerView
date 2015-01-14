@@ -3,10 +3,13 @@ package com.android2ee.recyclerview.adapter;
 import java.util.List;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.android2ee.recyclerview.R;
 
 /**
  * 
@@ -69,6 +72,14 @@ public class RecyclerSimpleViewAdapter extends RecyclerView.Adapter<RecyclerSimp
 		// save information in holder, we have one type in this adapter
         holder.primaryText.setText(item);
         holder.itemView.setTag(item);
+        
+        if ((position % 2) == 0) {
+        	Log.w("TAG", "color1");
+        	holder.itemView.setBackgroundResource(R.color.color1);
+        } else {
+        	Log.w("TAG", "color2");
+        	holder.itemView.setBackgroundResource(R.color.color2);
+        }
 	}
     
     /**
